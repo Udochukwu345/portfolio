@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .hero-section{
+            /* background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); */
+            padding: 120px 0;
+            min-height: 70vh;
+
+        }
+        .feature-icon{
+            width: 64px;
+            height: 64px;
+            background: #6366f1;
+            color: black;
+            border-radius: 12px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 1rem;
+
+        }
+        .card{
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .card:hover{
+            transform:translateY(-5px);
+        }
+        /* .column7 {
+            float: right;
+        } */
+         .testimonial-img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+         }
+         .home{
+          width: 100%;
+          height: 80vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         }
+         .home-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .heading-sm{
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 10px 0px;
+         }
+         .heading-md{
+            font-size: 60px;
+            margin-top : 22px;
+font-weight: 400;
+         }
+         .img_home{
+            width:500px;
+        
+        
+         }
+
+
+         .img-fluid rounded-4 shad{
+            width: 70px;
+            height:80px;
+            padding-right: 20px;
+         }
+         .headings{
+            align-items: center;
+         }
+         .para-services{
+            align-items: center;
+         }
+
+         .services { /* The parent container of the h3 and p */
+  width: 100%;
+  height: 100vh;
+}
+.headings{
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ed0000;
+    
+    /* background: linear-gradient(to right, #ed0000 42%, #6850de 58%); */
+    --webkit-background-clip:text;
+    /* -webkit-text-fill-color: transparent; */
+    position: relative;
+}
+.headings::after{
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #ed0000;
+}
+.para-services{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    line-height: 29px;
+    max-width: 600px;
+    margin: 29px auto;
+}
+.service-container{
+    padding: 37px 0;
+}
+.content-services{
+    display: flex;
+}
+.icon-service{
+    margin: 0px 24px;
+}
+.service_icons{
+    font-size: 25px ;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 100%;
+    color: black;
+    transition: background-color 400ms;
+}
+.heading-text{
+    font-size: 19px;
+font-weight: 600;
+color: rgba(0, 0, 0, 0.825);
+}
+.para-text{
+    font-size: 19px;
+    font-weight: 600;
+    color:black;
+    line-height: 25px;
+}
+.content_services:hover .service_icons{
+    background-color: #ed0000;
+    color: white;
+}
+.skills{
+    width: 72%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.heading_skills{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.heading-text{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 16px 0;
+    color: black; 
+}
+
+h3{
+    color: black;
+}
+.coding_heading{
+    font-size: 25px;
+    margin: 6px;
+    color: black;
+}
+.progress_container{
+    height: 25px;
+    padding: 2px;
+    border-radius: 80px;
+    background-color: white;
+    border: 2px solid rgb(219, 5, 5);
+    width: 80%;
+    margin-bottom: 19px;
+}
+
+.progress-bar{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- navbar begins -->
+     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-small"> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
+                <a href="" class="navbar-brand fw-bold text-primary">
+                
+                   
+                    <!-- <i class="bi bi-box-seam-fill"></i>Startup -->
+                    <!-- <i class="bi bi-shield-fill-check"></i>Jade -->
+                    <i class="bi bi-box-seam-fill"></i>devon
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#features">About us</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#Pricing">Services</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="product.html">projects</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="btn btn-primary ms-2" href="signup.html">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <section class="hero-section text-blue d-flex align-items-center">
+            <div class="container ">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-4 fw-bold mb-4">Hi guys I am Chikere Udochukwu Victor</h1>
+        <p class="lead mb-4 fw-bold">Front end developer , Software developer</p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+        
+        <a class="btn btn-primary btn-lg w-100 w-sm-auto fw-bold" href="https://calm-macaron-99ae23.netlify.app/">project</a>
+        <a class="btn btn-outline-primary btn-lg w-100 w-sm-auto fw-bold" href="prenup.html"> learn more</a>
+        <!-- <div class="col-lg-6">
+            <img class="img-fluid" src="" alt="">
+        
+        </div> -->
+        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-4 shad" src="images/oren.webp" alt="">
+                    
+                    </div>
+                    
+        
+                </div>
+        
+            </div>
+        
+        </section>
+
+
+
+
+        <section class="service">
+            <h3 class="headings">Services</h3>
+            <p class="para-services">A front end developer with  2 years experience working with  freelance services and build with Mel software engineering</p>
+<div class="service-container">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi service_icons bi-bar-chart-line-fill"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">Front end design</h3>
+                        <p class="para-text">Making use of front end technologies like bootstrap and react</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi service_icons bi-badge-3d-fill"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">Animations</h3>
+                        <p class="para-text">Making use of 3d front end libraries for 3d designs </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi  service_icons bi-database-fill-lock"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">Database storage</h3>
+                        <p class="para-text">Using mongodb, node js for server side applications, crud operations</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="row my-5 row-second">
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi bi-life-preserver"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">The use of Github and Gitbash</h3>
+                        <p class="para-text">For collaboration,merging, pull requests </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi bi-layers-fill"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">web3 smart contract development</h3>
+                        <p class="para-text">creating decentralized applications with solidity,hardhat </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="content-services">
+                    <span class="icon-service"><i class="bi bi-coin"></i></span>
+                    <div class="context-text">
+                        <h3 class="heading-text">web 3 content writing</h3>
+                        <p class="para-text">writing about different trends, opportunities and updates in web3 </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="skills">
+    <h2 class="heading_skills">My Skills</h2>
+    <div class="container">
+<div class="row">
+    <div class="col-lg-6 col-md-12">
+<h4 class="heading_text">Programming Skills</h4>
+<div class="content_skills">
+<h5 class="coding_heading">Bootstrap </h5>
+<!-- Progress Bar -->
+<div class="progress progress_container" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar w-75">75%</div>
+  </div>
+</div>
+
+<div class="content_skills">
+    <h5 class="coding_heading">React </h5>
+    <!-- Progress Bar -->
+    <div class="progress progress_container" role="progressbar" aria-label="Basic example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar w-75">75%</div>
+      </div>
+    </div>
+
+    <div class="content_skills">
+        <h5 class="coding_heading">Tailwind </h5>
+        <!-- Progress Bar -->
+        <div class="progress progress_container" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar w-75">75%</div>
+          </div>
+        </div>
+
+
+        <div class="content_skills">
+            <h5 class="coding_heading">Javascript </h5>
+            <!-- Progress Bar -->
+            <div class="progress progress_container" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar w-75">75%</div>
+              </div>
+            </div>
+    </div>
+</div>
+    </div>
+
+</div>
+
+        </section>
+
+
+
+
+        <section id="projects" class="py-5 bg-light">  <div class="container">
+            <div class="row">
+              <div class="col-12 text-center mb-4">  <h2>My Projects</h2>
+                <p class="lead">Showcasing some of my recent work.</p>
+              </div>
+            </div>
+            <div class="row">  <div class="col-md-4 mb-4">  <div class="card h-100">  <img src="images/futuristic-tech.avif" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Electronic Ecommerce</h5>
+                    <p class="card-text"> Electronic Ecommerce website displaying electronic products.</p>
+                    <a href="https://udochukwu345.github.io/" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 mb-4">  <div class="card h-100">  <img src="images/digital-illustration-microchip.jpg" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Crypto investment website</h5>
+                    <p class="card-text">An web3 cryptocurrency website  </p>
+                    <a href="https://calm-macaron-99ae23.netlify.app/" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 mb-4">  <div class="card h-100">  <img src="images/smartphone-headset-power-bank-with-charging-cables.avif" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Decentralized exchange platform </h5>
+                    <p class="card-text">Building a decentralized exchange </p>
+                    <a href="https://taupe-conkies-145dc9.netlify.app/trustwallet.com/index.html" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+        
+              </div>
+          </div>
+        </section>
+        
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Services</h5>
+                        <p> 2025 services. All rights reserved</p>
+            
+                    </div>
+            
+                </div>
+            </div>
+                   </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </body>
